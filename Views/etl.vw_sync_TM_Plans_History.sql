@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE VIEW [etl].[vw_sync_TM_Plans_History] AS (
+
+SELECT * FROM ods.TM_Plans_History (NOLOCK)
+
+)
+
+GO

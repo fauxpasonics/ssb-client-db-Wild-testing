@@ -1,0 +1,30 @@
+CREATE TABLE [stg].[NCR_Items]
+(
+[ETL_ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL_CreatedDate] [datetime] NOT NULL CONSTRAINT [DF__NCR_Items__ETL_C__477592A4] DEFAULT (getdate()),
+[ETL_SourceFileName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ITEM_NO] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DESCR] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CATEG_COD] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STAT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ITEM_TYP] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TRK_METH] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IS_TXBL] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STK_UNIT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[WEIGHT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CUBE] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CREATE_DAT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GRID_DIM_1_TAG] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GRID_DIM_2_TAG] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GRID_DIM_3_TAG] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BARCOD] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IS_ECOMM_ITEM] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_COST] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IS_KIT_PAR] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CATEG_SUBCAT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IS_DISCNTBL] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PRC_1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_MAINT_DT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HTML_DESCR] [nvarchar] (4000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

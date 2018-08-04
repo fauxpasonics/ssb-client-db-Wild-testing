@@ -1,0 +1,40 @@
+CREATE TABLE [ods].[Snapshot_FanMaker_UserHistory_Orders]
+(
+[FanMaker_UserHistory_OrdersSK] [int] NOT NULL IDENTITY(1, 1),
+[UserID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Status] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Success] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AdminID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Quantity] [int] NULL,
+[DeliveryMethod] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OrderedOn] [datetime2] NULL,
+[CompletedOn] [datetime2] NULL,
+[ShippingInfo] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Title] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subtitle] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Description] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ImageURL] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PrizeType] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OrdersStatus] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ItemOption] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Points] [int] NULL,
+[ShippingInfoName] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoAddress1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoAddress2] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoCity] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoState] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoZip] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoPhone] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ShippingInfoTrackingnumber] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_CreatedOn] [datetime] NULL,
+[ETL_CreatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_UpdatedOn] [datetime] NULL,
+[ETL_UpdatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RecordEndDate] [datetime] NULL
+)
+GO
+ALTER TABLE [ods].[Snapshot_FanMaker_UserHistory_Orders] ADD CONSTRAINT [PK__Snapshot__19BC7A069D915B1A] PRIMARY KEY CLUSTERED  ([FanMaker_UserHistory_OrdersSK])
+GO

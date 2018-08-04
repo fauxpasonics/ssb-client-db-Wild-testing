@@ -1,0 +1,32 @@
+CREATE TABLE [stg].[FanMaker_Activities_Historical20170614]
+(
+[ETL__ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL__CreatedDate] [datetime] NOT NULL CONSTRAINT [DF__FanMaker___ETL____2608E68A] DEFAULT (getdate()),
+[UserID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Username] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastSeen] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MemberID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CurrentMembershipLevel] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StudentID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TicketmasterID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[OutboxID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[GPSID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RFID] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Tags] [nvarchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DesktopVisits] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MobileWebVisits] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MobileAppVisits] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TotalVisits] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Type] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subtype] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Date] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subject] [nvarchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Awarded] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HelpText] [nvarchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Link] [nvarchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO

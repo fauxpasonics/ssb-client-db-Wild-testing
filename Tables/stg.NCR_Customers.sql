@@ -1,0 +1,30 @@
+CREATE TABLE [stg].[NCR_Customers]
+(
+[ETL_ID] [int] NOT NULL IDENTITY(1, 1),
+[ETL_CreatedDate] [datetime] NOT NULL CONSTRAINT [DF__NCR_Custo__ETL_C__3FD470DC] DEFAULT (getdate()),
+[ETL_SourceFileName] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CUST_NO] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NAM] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FST_NAM] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_NAM] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADRS_1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ADRS_2] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CITY] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[STATE] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZIP_COD] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CNTRY] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PHONE_1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PHONE_2] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EMAIL_ADRS_1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EMAIL_ADRS_2] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[URL_1] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FST_SAL_DAT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_SAL_DAT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_SAL_AMT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ALT_CUST_NO] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TYPE] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[IS_ECOMM_CUST] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ECOMM_CUST_NO] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LST_MAINT_DT] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
